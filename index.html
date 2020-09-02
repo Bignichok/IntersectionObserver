@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntersectionObserverAPI</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="logo">IO</div>
+        <div class="search">
+          <input type="search" class="search-input" />
+        </div>
+        <div class="active-article">Active article</div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h1 class="title">Event and InterSection Observer</h1>
+        <article class="article">
+          <h2 class="sub-title">First title</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            soluta laudantium iure in, asperiores ullam error earum ea
+            temporibus hic magni corporis totam expedita aliquid consequatur?
+            Asperiores, quo ut commodi facilis laudantium provident voluptatibus
+            qui accusantium blanditiis officia tempore vel architecto doloribus
+            nemo quam ipsam incidunt odit fugiat natus voluptas. Asperiores, aut
+            voluptatibus consequuntur cumque totam nesciunt enim optio dicta
+            nobis ipsum atque dolorem numquam quis nihil assumenda quaerat ea
+            doloribus, labore reiciendis a debitis consequatur? Reiciendis modi,
+            voluptates beatae dicta sint vel. Dolorem, tempora nemo? Nobis vero
+            similique ducimus totam illo pariatur neque non cumque voluptate
+            facilis. Architecto beatae vitae accusamus atque impedit mollitia
+            maiores eligendi expedita deleniti. Reiciendis, suscipit sit
+            pariatur repellendus dolorem corporis laboriosam libero ipsa dolores
+            debitis! Harum eaque debitis deleniti. Quae nihil ipsa neque quis
+            commodi sit, eaque minima, minus nobis asperiores id incidunt
+            necessitatibus repudiandae labore ipsum facere enim sequi nostrum
+            inventore expedita ex placeat consequuntur fugiat. Totam, saepe nemo
+            beatae deleniti quod autem fugit sint fuga distinctio delectus
+            expedita, ea culpa quidem voluptate aspernatur eius aliquid
+            architecto nostrum aliquam blanditiis rem. Quia odio vitae eaque
+            perspiciatis a libero rem quae necessitatibus, exercitationem
+            nesciunt, amet neque fuga non ipsam nisi ullam, unde mollitia porro!
+          </p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            soluta laudantium iure in, asperiores ullam error earum ea
+            temporibus hic magni corporis totam expedita aliquid consequatur?
+            Asperiores, quo ut commodi facilis laudantium provident voluptatibus
+            qui accusantium blanditiis officia tempore vel architecto doloribus
+            nemo quam ipsam incidunt odit fugiat natus voluptas. Asperiores, aut
+            voluptatibus consequuntur cumque totam nesciunt enim optio dicta
+            nobis ipsum atque dolorem numquam quis nihil assumenda quaerat ea
+            doloribus, labore reiciendis a debitis consequatur? Reiciendis modi,
+            voluptates beatae dicta sint vel. Dolorem, tempora nemo? Nobis vero
+            similique ducimus totam illo pariatur neque non cumque voluptate
+            facilis. Architecto beatae vitae accusamus atque impedit mollitia
+            maiores eligendi expedita deleniti. Reiciendis, suscipit sit
+            pariatur repellendus dolorem corporis laboriosam libero ipsa dolores
+            debitis! Harum eaque debitis deleniti. Quae nihil ipsa neque quis
+            commodi sit, eaque minima, minus nobis asperiores id incidunt
+            necessitatibus repudiandae labore ipsum facere enim sequi nostrum
+            inventore expedita ex placeat consequuntur fugiat. Totam, saepe nemo
+            beatae deleniti quod autem fugit sint fuga distinctio delectus
+            expedita, ea culpa quidem voluptate aspernatur eius aliquid
+            architecto nostrum aliquam blanditiis rem. Quia odio vitae eaque
+            perspiciatis a libero rem quae necessitatibus, exercitationem
+            nesciunt, amet neque fuga non ipsam nisi ullam, unde mollitia porro!
+          </p>
+          <h2 class="sub-title">Second title</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            soluta laudantium iure in, asperiores ullam error earum ea
+            temporibus hic magni corporis totam expedita aliquid consequatur?
+            Asperiores, quo ut commodi facilis laudantium provident voluptatibus
+            qui accusantium blanditiis officia tempore vel architecto doloribus
+            nemo quam ipsam incidunt odit fugiat natus voluptas. Asperiores, aut
+            voluptatibus consequuntur cumque totam nesciunt enim optio dicta
+            nobis ipsum atque dolorem numquam quis nihil assumenda quaerat ea
+            doloribus, labore reiciendis a debitis consequatur? Reiciendis modi,
+            voluptates beatae dicta sint vel. Dolorem, tempora nemo? Nobis vero
+            similique ducimus totam illo pariatur neque non cumque voluptate
+            facilis. Architecto beatae vitae accusamus atque impedit mollitia
+            maiores eligendi expedita deleniti. Reiciendis, suscipit sit
+            pariatur repellendus dolorem corporis laboriosam libero ipsa dolores
+            debitis! Harum eaque debitis deleniti. Quae nihil ipsa neque quis
+            commodi sit, eaque minima, minus nobis asperiores id incidunt
+            necessitatibus repudiandae labore ipsum facere enim sequi nostrum
+            inventore expedita ex placeat consequuntur fugiat. Totam, saepe nemo
+            beatae deleniti quod autem fugit sint fuga distinctio delectus
+            expedita, ea culpa quidem voluptate aspernatur eius aliquid
+            architecto nostrum aliquam blanditiis rem. Quia odio vitae eaque
+            perspiciatis a libero rem quae necessitatibus, exercitationem
+            nesciunt, amet neque fuga non ipsam nisi ullam, unde mollitia porro!
+          </p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            soluta laudantium iure in, asperiores ullam error earum ea
+            temporibus hic magni corporis totam expedita aliquid consequatur?
+            Asperiores, quo ut commodi facilis laudantium provident voluptatibus
+            qui accusantium blanditiis officia tempore vel architecto doloribus
+            nemo quam ipsam incidunt odit fugiat natus voluptas. Asperiores, aut
+            voluptatibus consequuntur cumque totam nesciunt enim optio dicta
+            nobis ipsum atque dolorem numquam quis nihil assumenda quaerat ea
+            doloribus, labore reiciendis a debitis consequatur? Reiciendis modi,
+            voluptates beatae dicta sint vel. Dolorem, tempora nemo? Nobis vero
+            similique ducimus totam illo pariatur neque non cumque voluptate
+            facilis. Architecto beatae vitae accusamus atque impedit mollitia
+            maiores eligendi expedita deleniti. Reiciendis, suscipit sit
+            pariatur repellendus dolorem corporis laboriosam libero ipsa dolores
+            debitis! Harum eaque debitis deleniti. Quae nihil ipsa neque quis
+            commodi sit, eaque minima, minus nobis asperiores id incidunt
+            necessitatibus repudiandae labore ipsum facere enim sequi nostrum
+            inventore expedita ex placeat consequuntur fugiat. Totam, saepe nemo
+            beatae deleniti quod autem fugit sint fuga distinctio delectus
+            expedita, ea culpa quidem voluptate aspernatur eius aliquid
+            architecto nostrum aliquam blanditiis rem. Quia odio vitae eaque
+            perspiciatis a libero rem quae necessitatibus, exercitationem
+            nesciunt, amet neque fuga non ipsam nisi ullam, unde mollitia porro!
+          </p>
+          <h2 class="sub-title">Third title</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            soluta laudantium iure in, asperiores ullam error earum ea
+            temporibus hic magni corporis totam expedita aliquid consequatur?
+            Asperiores, quo ut commodi facilis laudantium provident voluptatibus
+            qui accusantium blanditiis officia tempore vel architecto doloribus
+            nemo quam ipsam incidunt odit fugiat natus voluptas. Asperiores, aut
+            voluptatibus consequuntur cumque totam nesciunt enim optio dicta
+            nobis ipsum atque dolorem numquam quis nihil assumenda quaerat ea
+            doloribus, labore reiciendis a debitis consequatur? Reiciendis modi,
+            voluptates beatae dicta sint vel. Dolorem, tempora nemo? Nobis vero
+            similique ducimus totam illo pariatur neque non cumque voluptate
+            facilis. Architecto beatae vitae accusamus atque impedit mollitia
+            maiores eligendi expedita deleniti. Reiciendis, suscipit sit
+            pariatur repellendus dolorem corporis laboriosam libero ipsa dolores
+            debitis! Harum eaque debitis deleniti. Quae nihil ipsa neque quis
+            commodi sit, eaque minima, minus nobis asperiores id incidunt
+            necessitatibus repudiandae labore ipsum facere enim sequi nostrum
+            inventore expedita ex placeat consequuntur fugiat. Totam, saepe nemo
+            beatae deleniti quod autem fugit sint fuga distinctio delectus
+            expedita, ea culpa quidem voluptate aspernatur eius aliquid
+            architecto nostrum aliquam blanditiis rem. Quia odio vitae eaque
+            perspiciatis a libero rem quae necessitatibus, exercitationem
+            nesciunt, amet neque fuga non ipsam nisi ullam, unde mollitia porro!
+          </p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            soluta laudantium iure in, asperiores ullam error earum ea
+            temporibus hic magni corporis totam expedita aliquid consequatur?
+            Asperiores, quo ut commodi facilis laudantium provident voluptatibus
+            qui accusantium blanditiis officia tempore vel architecto doloribus
+            nemo quam ipsam incidunt odit fugiat natus voluptas. Asperiores, aut
+            voluptatibus consequuntur cumque totam nesciunt enim optio dicta
+            nobis ipsum atque dolorem numquam quis nihil assumenda quaerat ea
+            doloribus, labore reiciendis a debitis consequatur? Reiciendis modi,
+            voluptates beatae dicta sint vel. Dolorem, tempora nemo? Nobis vero
+            similique ducimus totam illo pariatur neque non cumque voluptate
+            facilis. Architecto beatae vitae accusamus atque impedit mollitia
+            maiores eligendi expedita deleniti. Reiciendis, suscipit sit
+            pariatur repellendus dolorem corporis laboriosam libero ipsa dolores
+            debitis! Harum eaque debitis deleniti. Quae nihil ipsa neque quis
+            commodi sit, eaque minima, minus nobis asperiores id incidunt
+            necessitatibus repudiandae labore ipsum facere enim sequi nostrum
+            inventore expedita ex placeat consequuntur fugiat. Totam, saepe nemo
+            beatae deleniti quod autem fugit sint fuga distinctio delectus
+            expedita, ea culpa quidem voluptate aspernatur eius aliquid
+            architecto nostrum aliquam blanditiis rem. Quia odio vitae eaque
+            perspiciatis a libero rem quae necessitatibus, exercitationem
+            nesciunt, amet neque fuga non ipsam nisi ullam, unde mollitia porro!
+          </p>
+        </article>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+    <script src="./js/IntersectionObserver.js" type="module"></script>
+  </body>
+</html>
